@@ -17,6 +17,7 @@ allprojects {
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 33 // 对应 Flutter InAppWebview 所需 SDK 级别
@@ -48,4 +49,14 @@ dependencies {
     api 'androidx.webkit:webkit:1.8.0'
     api 'androidx.browser:browser:1.6.0'
     api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+            }
+        }
+    }
 }
