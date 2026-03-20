@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 33 // 对应 Flutter InAppWebview 所需 SDK 级别
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    // 聚合本地收集到的所有 AAR (Flutter本身的释放包 与 第三方插件包)
+    api fileTree(dir: 'libs', include: ['*.aar'])
+
+    // 透传强依赖的 Flutter 引擎核心版本，保障其他原生 App 接入时正常拉取 io.flutter 对应版本的 Engine VM
+    def flutter_version = "1.0.0-82bd5b7209295a5b7ff8cae0df96e7870171e3a5"
+    api "io.flutter:flutter_embedding_release:$flutter_version"
+    api "io.flutter:armeabi_v7a_release:$flutter_version"
+    api "io.flutter:arm64_v8a_release:$flutter_version"
+    api "io.flutter:x86_64_release:$flutter_version"
+
+    // 在由于直接引入 aar 会丢弃部分三方 POM 的隐式依赖，我们为了稳妥，帮常用插件强传递它原本的支撑类库：
+    api 'androidx.webkit:webkit:1.8.0'
+    api 'androidx.browser:browser:1.6.0'
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+}
