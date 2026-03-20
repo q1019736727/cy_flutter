@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pichillilorenzo.flutter_inappwebview_android",
+    "module": "flutter_inappwebview_android_debug",
+    "version": "1.0.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDebugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-82bd5b7209295a5b7ff8cae0df96e7870171e3a5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_inappwebview_android_debug-1.0.6.aar",
+          "url": "flutter_inappwebview_android_debug-1.0.6.aar",
+          "size": 542593,
+          "sha512": "97df90e3c4952dbef2366d0fb6278b3b2b1f417484164afe11b7c466a49fcabffb4878ceae379198a789b9ff0059ea3f47555fcfa83782368a61b9f13a8a1da8",
+          "sha256": "480a869bf50f9ab6ba319f7859b97e14ae5c92d0af71914510135ef049d1851c",
+          "sha1": "80825867955d30a9ea9105256d2e362600d31f7a",
+          "md5": "cefdfca8ac527d3b2b535f38d3d63a74"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-82bd5b7209295a5b7ff8cae0df96e7870171e3a5"
+          }
+        },
+        {
+          "group": "androidx.webkit",
+          "module": "webkit",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.browser",
+          "module": "browser",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.swiperefreshlayout",
+          "module": "swiperefreshlayout",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_inappwebview_android_debug-1.0.6.aar",
+          "url": "flutter_inappwebview_android_debug-1.0.6.aar",
+          "size": 542593,
+          "sha512": "97df90e3c4952dbef2366d0fb6278b3b2b1f417484164afe11b7c466a49fcabffb4878ceae379198a789b9ff0059ea3f47555fcfa83782368a61b9f13a8a1da8",
+          "sha256": "480a869bf50f9ab6ba319f7859b97e14ae5c92d0af71914510135ef049d1851c",
+          "sha1": "80825867955d30a9ea9105256d2e362600d31f7a",
+          "md5": "cefdfca8ac527d3b2b535f38d3d63a74"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flutter_inappwebview_android_debug-1.0.6-sources.jar",
+          "url": "flutter_inappwebview_android_debug-1.0.6-sources.jar",
+          "size": 231367,
+          "sha512": "724dc195bfbe4b28d89808344871daa160afad873ef68cf45446c7367b99b3bef629039bef0c408ae62bce6321f437f389b09520366a50be43d8a6628dbee098",
+          "sha256": "516e4f125d631258bc8b2fcddcbe2cc80259886899125edb9cb7bb536d2d0603",
+          "sha1": "a1de5e80df1e9c9ddbb81872d908bc2abb82ddde",
+          "md5": "8d71034285687670dcf185251ed6d329"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flutter_inappwebview_android_debug-1.0.6-javadoc.jar",
+          "url": "flutter_inappwebview_android_debug-1.0.6-javadoc.jar",
+          "size": 1167935,
+          "sha512": "c65718d072e7eb28b9e4425abd77801eb8a5a247561931497719673bd6ca4805d1345fe1bcf1bab9f78d8673d301d6cf0b363553c58505a6fb01933e1b66f8ba",
+          "sha256": "41691109c7e4c789c18d764115e55f174e335814d42108421d28f199698e3d89",
+          "sha1": "7d33a50eea17857de871bb75d633f244ffa37c4d",
+          "md5": "b38f411a68a39e80eb2786266e7c4dc5"
+        }
+      ]
+    }
+  ]
+}
