@@ -1,0 +1,146 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example.tianma_flutter",
+    "module": "flutter_debug",
+    "version": "1.0.9",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDebugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "armeabi_v7a_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "arm64_v8a_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "x86_64_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "x86_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "com.pichillilorenzo.flutter_inappwebview",
+          "module": "flutter_inappwebview_debug",
+          "version": {
+            "requires": "1.0.9"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_debug-1.0.9.aar",
+          "url": "flutter_debug-1.0.9.aar",
+          "size": 13532987,
+          "sha512": "eb54bd25a844812e4909b172398fa01b4c4089d1bd5edb074cf26236b29114e64a078a61cb0ac6e239905a08b31e552fc5a26c48d2a2b6f3b456399d04a30de8",
+          "sha256": "16b1f6ac7e37b1b0d6918c9f72d859ff019c5df42f0b8cbfa37c38e182cd21bf",
+          "sha1": "e4f97e4603d8f581620312167db2092e323211b8",
+          "md5": "38d5147a78db6274fd7fbda3eb8ead82"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "armeabi_v7a_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "arm64_v8a_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "x86_64_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "x86_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "com.pichillilorenzo.flutter_inappwebview",
+          "module": "flutter_inappwebview_debug",
+          "version": {
+            "requires": "1.0.9"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_debug-1.0.9.aar",
+          "url": "flutter_debug-1.0.9.aar",
+          "size": 13532987,
+          "sha512": "eb54bd25a844812e4909b172398fa01b4c4089d1bd5edb074cf26236b29114e64a078a61cb0ac6e239905a08b31e552fc5a26c48d2a2b6f3b456399d04a30de8",
+          "sha256": "16b1f6ac7e37b1b0d6918c9f72d859ff019c5df42f0b8cbfa37c38e182cd21bf",
+          "sha1": "e4f97e4603d8f581620312167db2092e323211b8",
+          "md5": "38d5147a78db6274fd7fbda3eb8ead82"
+        }
+      ]
+    }
+  ]
+}
